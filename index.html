@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thirukkural App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Thirukkural</h2>
+        <div class="underline"></div>
+        <section class="center">
+            <form action="" class="form-kural">
+                <input type="text" id="input-kural" name="kural" placeholder="Please enter a number between 1 and 1330">
+                <button type="submit" class="btn submit-btn">Submit</button>
+            </form>
+
+        </section>
+        <article class="kural-article">
+            <p>அதிகாரம்: <span class="athikaram"></span></p>
+            <p>குறள் பால்: <span class="paal"></span></p>
+            <p>குறள் இயல்: <span class="iyal"></span></p>
+            <p>குறள் எண்: <span class="kural-numb"></span></p>
+
+            <div class="main-kural">
+                <h4 class="line-1"></h4>
+                <h4 class="line-2"></h4>
+
+                <p class="explanation"></p>
+            </div>
+            <div class="english-expl">
+                <h4 class="eng-kural"></h4>
+                <p class="eng-explanation"></p>
+            </div>
+        </article>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+
+</html>
