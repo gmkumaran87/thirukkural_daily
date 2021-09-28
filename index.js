@@ -26,10 +26,11 @@ init();
 
 const handleSubmit = async(e) => {
     e.preventDefault();
-    const inputValue = document.getElementById("input-kural").value;
+    const inputValue = document.getElementById("input-kural");
 
     console.log(inputValue);
-    const inpKural = await kural.getData(inputValue);
+    const inpKural = await kural.getData(inputValue.value);
     ui.displayKural(inpKural);
+    inputValue.value = "";
 };
 submitBtn.addEventListener("click", handleSubmit);

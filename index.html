@@ -15,31 +15,31 @@
         <div class="underline"></div>
         <section class="center">
             <form action="" class="form-kural">
-                <input type="text" id="input-kural" name="kural" placeholder="Please enter a number between 1 and 1330">
+                <input type="number" min="1" max="1330" id="input-kural" name="kural" placeholder="Number between 1 and 1330">
                 <button type="submit" class="btn submit-btn">Submit</button>
             </form>
 
         </section>
         <article class="kural-article">
             <div class="kural-header">
-                <p>அதிகாரம்: <span class="athikaram"></span></p>
-                <p>குறள் பால்: <span class="paal"></span></p>
-                <p>குறள் இயல்: <span class="iyal"></span></p>
-                <p>குறள் எண்: <span class="kural-numb"></span></p>
+                <p>அதிகாரம்: <span class="output-header athikaram"></span></p>
+                <p>குறள் பால்: <span class="output-header paal"></span></p>
+                <p>குறள் இயல்: <span class="output-header iyal"></span></p>
+                <p>குறள் எண்: <span class="output-header kural-numb"></span></p>
             </div>
             <div class="main-kural">
                 <h5 class="line-1"></h5>
                 <h5 class="line-2"></h5>
 
                 <div class="expl">
-                    <h6>Explanation</h6>
+                    <h5>Explanation</h5>
                     <p class="explanation"></p>
                 </div>
             </div>
             <div class="english-expl">
-                <h6>Translation</h6>
+                <h5>Translation</h5>
                 <h5 class="eng-kural"></h5>
-                <h6>Explanation</h6>
+                <h5>Explanation</h5>
                 <p class="eng-explanation"></p>
             </div>
         </article>

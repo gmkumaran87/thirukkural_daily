@@ -91,6 +91,8 @@ body {
     width: 200px;
     margin-right: .51rem;
     font-family: inherit;
+    border: 2px solid var(--clr-primary-5);
+    border-radius: 4px;
 }
 
 .btn {
@@ -110,11 +112,14 @@ body {
 .kural-article {
     margin: 1rem auto;
     padding: 1rem;
-    /* width: 75%; */
 }
 
 .kural-article p {
     font-size: .8rem;
+}
+
+.output-header {
+    font-weight: bold;
 }
 
 .main-kural {
@@ -130,6 +135,10 @@ body {
 .expl {
     text-align: left;
     margin-top: 1.5rem;
+}
+
+.expl h5 {
+    color: #000;
 }
 
 .english-expl {
