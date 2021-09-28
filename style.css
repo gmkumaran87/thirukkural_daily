@@ -108,5 +108,42 @@ body {
 }
 
 .kural-article {
-    margin-top: 1rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 75%;
+}
+
+.kural-article p {
+    font-size: .8rem;
+}
+
+.main-kural {
+    font-family: inherit;
+    margin-top: 2rem;
+}
+
+.main-kural h5 {
+    color: var(--clr-red-light);
+    font-size: .9rem;
+}
+
+.expl {
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.english-expl {
+    margin-top: 2rem;
+}
+
+.eng-kural {
+    margin: 12px 0;
+    color: var(--clr-red-light)
+}
+
+@media (min-width: 1024px) {
+    .kural-header {
+        display: flex;
+        flex-flow: row;
+    }
 }
