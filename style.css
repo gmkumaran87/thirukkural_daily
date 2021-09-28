@@ -110,7 +110,7 @@ body {
 .kural-article {
     margin: 1rem auto;
     padding: 1rem;
-    width: 75%;
+    /* width: 75%; */
 }
 
 .kural-article p {
@@ -141,7 +141,15 @@ body {
     color: var(--clr-red-light)
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+        margin-top: 2rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
     .kural-header {
         display: flex;
         flex-flow: row;
