@@ -26,11 +26,17 @@ init();
 
 const handleSubmit = async(e) => {
     e.preventDefault();
-    const inputValue = document.getElementById("input-kural");
+    const inputEl = document.getElementById("input-kural");
 
-    console.log(inputValue);
-    const inpKural = await kural.getData(inputValue.value);
-    ui.displayKural(inpKural);
-    inputValue.value = "";
+    const inputValue = inputEl.valueAsNumber;
+
+    if (inputValue > 0 && inputValue < 1330) {
+        const inpKural = await kural.getData(inputValue);
+        ui.displayKural(inpKural);
+    } else {
+        ui.validation("Please enter a number between 1 and 1330.");
+    }
+
+    inputEl.value = "";
 };
 submitBtn.addEventListener("click", handleSubmit);
